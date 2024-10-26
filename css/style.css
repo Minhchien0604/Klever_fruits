@@ -1,0 +1,160 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    font-weight: 600;
+    color: #922a8d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #be53b9;
+    cursor: pointer;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-image {
+    width: 150px;
+}
+
+.left-image img {
+    margin-top: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top:20px;
+}
+
+
+.search-box input {
+    width: 400px;
+    height: 40px;
+    margin-right: 5px;
+    border: 1px solid #be53b9;
+    outline: none;
+    font-size: 16px;
+    flex-grow: 1;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.search-box button {
+    width: 150px;
+    height: 40px;
+    background-color: #922a8d;
+    border: none;
+    color: #ffff;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-box {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.icon-box i {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #be53b9;
+    padding-left: 30px;
+}
+
+.slogan-text {
+    text-align: center;
+    font-size: 14px;
+    color: #be53b9;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+/* Navbar Styling */
+
+.navbar {
+    background-color: #fff;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#nav {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#nav .sub-nav {
+    list-style-type: none;    
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+   color: #be53b9;
+   position: relative;
+   margin:0 35px;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 30px;
+    
+}
+#nav li:hover .sub-nav{
+    display: block;
+}
+#nav .sub-nav {
+    display: none;
+    top: 100%;
+    left: 0;
+    min-width: 280px;
+    background-color: #fff;
+    position: absolute;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#nav .sub-nav a {
+    color: #be53b9;
+    padding: 0 12px;
+    line-height: 30px;
+    text-align: left;
+}
+#nav .nav-arrow-down {
+    color: #922a8d;
+    font-size: 18px;
+}
+
+
+
+

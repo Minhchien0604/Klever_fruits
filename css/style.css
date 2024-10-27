@@ -1,20 +1,9 @@
-
+/* Các style chung (giữ nguyên) */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
-
-a {
-    font-weight: 600;
-    color: #922a8d;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #be53b9;
-    cursor: pointer;
 }
 
 header {
@@ -49,7 +38,6 @@ header {
     margin-top:20px;
 }
 
-
 .search-box input {
     width: 400px;
     height: 40px;
@@ -83,6 +71,11 @@ header {
     cursor: pointer;
 }
 
+.icon-box a {
+    text-decoration: none;
+    color: #922a8d;
+}
+
 .icon-box i {
     font-size: 20px;
     margin-right: 5px;
@@ -90,19 +83,10 @@ header {
     padding-left: 30px;
 }
 
-.slogan-text {
-    text-align: center;
-    font-size: 14px;
-    color: #be53b9;
-    font-weight: bold;
-    padding-right: 10px;
-}
-
 /* Navbar Styling */
-
 .navbar {
     background-color: #fff;
-    padding: 0 10px;
+    padding: 0 20px;
     text-align: center;
 }
 
@@ -115,46 +99,146 @@ header {
     list-style-type: none;    
 }
 
+#nav .sub-nav{
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    min-width: 1000px; 
+    border-radius: 8px;
+}
 #nav > li {
     display: inline-block;
 }
 
 #nav li {
-   color: #be53b9;
-   position: relative;
-   margin:0 35px;
+    position: relative;
+    margin: 0 35px;
 }
 
-#nav li a {
+#nav li .title, 
+#nav li a  {
+    position: relative;
+    font-weight: bold;
+    color: #922a8d;
     text-decoration: none;
     line-height: 30px;
-    
+    transition: color 0.3s;
 }
-#nav li:hover .sub-nav{
+
+.fa-angle-down {
+    color: #922a8d;
+}
+
+#nav li .title::after,
+#nav li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0;
+    height: 1px;
+    background-color: #922a8d;
+    transition: width 0.3s ease; 
+}
+
+#nav li .title:hover,
+#nav li a:hover {
+    color: #922a8d; 
+}
+
+#nav li .title:hover::after,
+#nav li a:hover::after {
+    width: 100%; 
+}
+
+#nav li:hover .sub-nav {
     display: block;
 }
+
 #nav .sub-nav {
     display: none;
+    position: absolute;
     top: 100%;
     left: 0;
     min-width: 280px;
     background-color: #fff;
-    position: absolute;
-    
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#nav .sub-nav a {
-    color: #be53b9;
-    padding: 0 12px;
-    line-height: 30px;
-    text-align: left;
+#nav .sub-nav .mega-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 1000px; 
+    border-radius: 8px;
+    position: relative;
+    z-index: 20;
 }
-#nav .nav-arrow-down {
+
+/* Mục con trong mega-menu */
+.mega-menu-item {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.sub-nav-prod {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-nav-prod span {
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.mega-menu-item .sub-nav-prod > li {
+    margin-bottom: 8px;
+}
+
+.mega-menu-item .sub-nav-prod > li a {
+    position: relative;
+    color: #5a5a5a; 
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.mega-menu-item .sub-nav-prod > li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: #922a8d;
+    transition: width 0.3s ease;
+}
+
+.mega-menu-item .sub-nav-prod > li a:hover {
     color: #922a8d;
-    font-size: 18px;
 }
 
+.mega-menu-item .sub-nav-prod > li a:hover::after {
+    width: 100%;
+}
 
+#nav li:hover .sub-nav {
+    display: block;
+}
 
-
+#nav .sub-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}

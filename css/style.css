@@ -176,7 +176,38 @@ header {
     z-index: 20;
 }
 
-/* Mục con trong mega-menu */
+#nav .sub-nav li{
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0; 
+    white-space: nowrap;
+}
+
+#nav .sub-nav li:last-child {
+    border-bottom: none; 
+}
+/* Đổi màu chữ trong các mục con của menu */
+#nav .sub-nav a,
+#nav .sub-nav .sub-nav-prod > li a {
+    font-weight: 400;
+    color: #676060;
+    display: flex; 
+    gap: 15px;
+}
+
+#nav .sub-nav a:hover,
+#nav .sub-nav .sub-nav-prod > li a:hover {
+    color: #922a8d; 
+}
+
+#nav .sub-nav li {
+    
+}
+.navbar, #nav .sub-nav, .mega-menu {
+    position: relative;
+    z-index: 1000;
+}
+
+
 .mega-menu-item {
     flex: 1;
     padding: 0 15px;
@@ -205,7 +236,6 @@ header {
 
 .mega-menu-item .sub-nav-prod > li a {
     position: relative;
-    color: #5a5a5a; 
     font-size: 14px;
     text-decoration: none;
     transition: color 0.3s;
@@ -241,4 +271,295 @@ header {
     left: 0;
     width: 100%;
     padding: 0;
+}
+
+/* carousel */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    max-height: 700px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel img.active{
+    display: block;
+}
+
+.carousel .prev,
+.carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+.carousel .prev:hover, 
+.carousel .next:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.carousel-container, .carousel {
+    position: relative;
+    z-index: 10;
+}
+
+/* Story Container */
+.story-container {
+    margin: 40px auto;
+    padding: 20px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.story-container .section-heading,
+.promotion .section-head {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.section-heading .box-header{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.story-container .htitle,
+.promotion .title-promotion {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+    color: #922a8d;
+    text-transform: uppercase;
+    border: 1px solid;
+    width: auto;
+    min-width: 500px;
+    text-align: center;
+    line-height: 40px;
+    max-width: 100%;
+    padding: 0px 20px;
+}
+
+/* Story Container Cards */
+.story-container .card {
+    background-color: #f9f9f9;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.story-container .card:hover {
+    transform: translateY(-5px);
+}
+
+.story-container .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.story-container .card-body {
+    padding: 15px;
+    text-align: left;
+}
+
+.story-container .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.story-container .card-body p {
+    font-size: 14px;
+    color: #676060;
+    line-height: 1.6;
+}
+
+/* Advantage Store */
+.advantage-store {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.advantage-store .sub-advantage-store {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage-store .sub-advantage-store ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.advantage-store .sub-advantage-store ul:hover {
+    transform: translateY(-5px);
+}
+
+.advantage-store .img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.advantage-store h1 {
+    font-size: 18px;
+    color: #922a8d;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.advantage-store p {
+    font-size: 14px;
+    color: #676060;
+    line-height: 1.5;
+}
+
+.advantage-store .sub-button {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #922a8d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.advantage-store .sub-button:hover {
+    color: #5e3466;
+}
+
+/* Promotion Section Cards */
+.promotion .row {
+    display: flex;
+    justify-content: space-between; /* Tạo khoảng cách giữa các thẻ */
+    flex-wrap: wrap; /* Đảm bảo các thẻ sẽ xuống dòng khi cần */
+    gap: 20px; /* Khoảng cách giữa các thẻ */
+    max-width: 1200px;
+    margin: 0 auto; /* Căn giữa các thẻ */
+    padding: 0 10px;
+}
+.promotion .card {
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    flex-direction: column; /* Đảm bảo thứ tự từ trên xuống */
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%; /* Đảm bảo chiều cao đồng nhất */
+    max-width: 100%; /* Đặt chiều rộng cố định cho mỗi card nếu cần */
+}
+
+.promotion .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Section */
+.promotion .card .icon img {
+    width: 100%;
+    height: 150px; /* Đặt chiều cao cố định cho ảnh để đồng bộ */
+    object-fit: cover; /* Cắt ảnh vừa với thẻ mà không biến dạng */
+    border-radius: 8px 8px 0 0;
+}
+
+/* Details Section */
+.promotion .details {
+    flex-grow: 1;
+    padding: 15px;
+    text-align: center;
+}
+
+.promotion .details p {
+    font-size: 14px;
+    color: #676060;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.promotion .details p strong {
+    color: #922a8d;
+}
+
+/* Center the button at the bottom */
+.promotion .action {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.promotion .action button {
+    background-color: #922a8d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 60%; 
+}
+
+.promotion .action button:hover {
+    background-color: #5e3466;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .promotion .card {
+        flex: 1 1 calc(50% - 20px); /* 2 thẻ trên mỗi hàng trên màn hình nhỏ hơn */
+    }
+}
+
+@media (max-width: 768px) {
+    .promotion .card {
+        flex: 1 1 100%; /* 1 thẻ trên mỗi hàng trên màn hình nhỏ */
+    }
 }

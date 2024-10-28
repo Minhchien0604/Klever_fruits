@@ -277,7 +277,7 @@ header {
 .carousel-container {
     position: relative;
     max-width: 100%;
-    margin: 0;
+    margin-top: 125px;
     overflow: hidden;
 }
 
@@ -321,6 +321,9 @@ header {
 
 .carousel .next {
     right: 10px;
+}
+.nav-bar{
+    background-color: white;
 }
 
 .carousel .prev:hover, 
@@ -368,6 +371,20 @@ header {
     text-align: center;
     line-height: 40px;
     max-width: 100%;
+    padding: 0px 20px;
+}
+.htitle-policy{
+    font-size: 24px;
+    /* margin: 0; */
+    font-weight: 700;
+    color: #922a8d;
+    text-transform: uppercase;
+    border: 1px solid #922a8d;
+    /* width: auto;
+    min-width: 500px;
+    text-align: center;
+    line-height: 40px;
+    max-width: 100%; */
     padding: 0px 20px;
 }
 

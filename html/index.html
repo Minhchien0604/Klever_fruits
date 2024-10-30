@@ -14,23 +14,21 @@
 <body>
     <!--Menu -->
     <header>
-        <div class="fixed-top nav-bar">     
+        <div class="nav-bar navbar-expand-lg">
             <div class="container">
-                <div class="left-image">
-                    <img alt="Placeholder image" src="../img/logo.png" />
-                </div>
-                <div>
-                    <div class="search-container">
-                        <div class="search-box">
+                <div class="row d-flex align-items-center justify-content-between w-100">
+                    <div class="left-image col-lg-1 col-2 text-center">
+                        <img alt="Placeholder image" src="../img/logo.png" />
+                    </div>
+                    <div class="search-container col-lg-10 d-none d-lg-flex">
+                        <div class="search-box col-lg-5">
                             <input placeholder="Bạn đang tìm kiếm gì?" type="text" />
-                            <button>
-                                Tìm kiếm
-                            </button>
+                            <button>Tìm kiếm</button>
                         </div>
-                        <div class="icons-container">
+                        <div class="icons-container col-lg-7">
                             <div class="icon-box">
                                 <i class="fa-solid fa-user"></i>
-                                <a href="#">Đăng nhập</a>
+                                <a href="#">Tìm kiếm<i class="fa-solid fa-user d-none"></i></a>
                             </div>
                             <div class="icon-box">
                                 <i class="fa-solid fa-user-plus"></i>
@@ -42,76 +40,30 @@
                             </div>
                         </div>
                     </div>
+                    <div class="nav__toggle col-lg-1 col-2 d-lg-none" id="nav-toggle">
+                        <i class="nav-burger fa-solid fa-bars"></i>
+                        <i class="nav-close fa-solid fa-xmark d-none"></i>
+                    </div>
                 </div>
             </div>
-            <div class="navbar">
-                <ul id="nav">
-                    <li>
-                        <a class="title" href="">SẢN PHẨM</a>
-                        <i class="nav-arrow-down fa-solid fa-angle-down"></i>
-                        <ul class="sub-nav">
-                            <li><a href="#list-product-season">Trái cây đang mùa</a></li>
-                            <li><a href="#list-product-cut">Trái cây cắt sẵn</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="title" href="">QUÀ TẶNG TRÁI CÂY</a>
-                        <i class="nav-arrow-down fa-solid fa-angle-down"></i>
-                        <ul class="sub-nav">
-                            <div class="mega-menu">
-                                <div class="mega-menu-item">
-                                    <ul class="sub-nav-prod"><span>Chúc mừng nhân dịp</span>
-                                        <li><a href="#list-product-gift">Lễ tình nhân 14/2</a></li>
-                                        <li><a href="#list-product-gift">Quốc tế phụ nữ 8/3</a></li>
-                                        <li><a href="#list-product-gift">Trung thu</a></li>
-                                        <li><a href="#list-product-gift">Phụ nữ Việt Nam 20/10</a></li>
-                                        <li><a href="#list-product-gift">Nhà giáo Việt Nam 20/11</a></li>
-                                        <li><a href="#list-product-gift">Tết Nguyên Đán</a></li>
-                                        <li><a href="#list-product-gift">Rằm Tháng Giêng</a></li>
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-item">
-                                    <ul class="sub-nav-prod"><span>Sinh nhật</span>
-                                        <li><a href="#list-product-gift">Sinh nhật Ông/ Bà</a></li>
-                                        <li><a href="#list-product-gift">Sinh nhật Bố/ Mẹ</a></li>
-                                        <li><a href="#list-product-gift">Sinh nhật Anh ấy/ Cô ấy</a></li>
-                                        <li><a href="#list-product-gift">Sinh nhật Đối tác/ Đồng nghiệp</a></li>
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-item">
-                                    <ul class="sub-nav-prod"><span>Người thương</span>
-                                        <li><a href="#list-product-gift">Anh ấy</a></li>
-                                        <li><a href="#list-product-gift">Cô ấy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="title" href="">TRÁI CÂY TƯƠI HÀNG NGÀY</a>
-                        <i class="nav-arrow-down fa-solid fa-angle-down"></i>
-                        <ul class="sub-nav">
-                            <li><a href="list-product-everyday">Bộ đôi dinh dưỡng</a></li>
-                            <li><a href="list-product-everyday">BST Vitamin cho bạn</a></li>
-                            <li><a href="list-product-everyday">BST Vitamin cho gia đình</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="title" href="#flash-sale">KHUYẾN MÃI</a>
-                    </li>
-                    <li>
-                        <a class="title" href="">KHÁM PHÁ KLEVER</a>
-                        <i class="nav-arrow-down fa-solid fa-angle-down"></i>
-                        <ul class="sub-nav">
-                            <li><a href="#our-policy">Chính sách của chúng tôi</a></li>
-                            <li><a href="#our-story">Câu chuyện của chúng tôi</a></li>
-                        </ul>
-                    </li>
+
+            <div class="ads row mt-2">
+                <img src="../img/topbar_img.jpg" alt="ads" class="img-fluid d-lg-none">
+            </div>
+
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul id="nav" class="w-100 d-flex justify-content-center flex-lg-row flex-column">
+                    <!-- Navigation items -->
                 </ul>
             </div>
-        </div>     
-    <!-- carousel -->
-     <section class="carousel-container">
+        </div>
+    </header>
+
+
+
+    <!-- Carousel -->
+    <section class="carousel-container">
         <div class="carousel">
             <img src="../img/slide_1_img.jpg" alt="slide1" class="active">
             <img src="../img/slide_3_img.jpg" alt="slide2">
@@ -119,7 +71,8 @@
             <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
             <button class="next"><i class="fa-solid fa-angle-right"></i></button>
         </div>
-     </section>   
+    </section>
+
 
     <!-- Câu chuyện của chúng tôi -->
     <div class="story-container" id="our-story">
@@ -129,7 +82,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-6 col-md-4">
                 <div class="card">
                     <img src="../img/card1.jpg" class="card-img" alt="Image">
                     <div class="card-body">
@@ -138,16 +91,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-6 col-md-4">
                 <div class="card">
-                    <img src="../img/card1.jpg" class="card-img" alt="Image">
+                    <img src="../img/card2.jpg" class="card-img" alt="Image">
                     <div class="card-body">
-                        <h4 class="card-title">KLEVER FRUIT - NHÀ TÀI TRỢ TRÁI CÂY TƯƠI DUY NHẤT TẠI SỰ KIỆN TASTE OF AUSTRALIA</h4>
+                        <h4 class="card-title">LỄ KÝ KẾT MOU GIỮA KLEVER FRUIT, HUYNNONG FRESH VÀ HIỆP HỘI TRÁI HỒNG HÀN QUỐC VỀ VIỆC QUẢNG BÁ TRÁI HỒNG HÀN QUỐC TẠI VIỆT NAM</h4>
                         <p>Vinh dự trở thành 1 trong 9 nhà tài trợ sự kiện Taste of Australia, sự kiện thường niên...</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-6 col-md-4">
                 <div class="card">
                     <img src="../img/card1.jpg" class="card-img" alt="Image">
                     <div class="card-body">
@@ -158,71 +111,71 @@
             </div>
         </div>
     </div>
-   
+    
     <!-- khanh beo -->
     <div class="promotion" id="flash-sale">
         <div class="section-head">
             <h3 class="title-promotion">Chương trình khuyến mãi</h3>
         </div>
         <div class="row">
-            <div class="card col-xl-3">
+            <div class="card col-6 col-md-3"> 
                 <div class="icon">
                     <img src="../img/xe.jpg" alt="Freeship">
                 </div>
                 <div class="details">
                     <p><strong>Miễn phí vận chuyển</strong></p>
-                    <p>(không áp dụng với sản phẩm Klever Fruit Online)</p>
+                    <p>(Áp dụng cho đơn hàng đầu tiên)</p>
                     <p>Đơn hàng từ 500.000đ</p>
                     <p>Mã: <strong>FREESHIP-01</strong></p>
-                    <p>HSD:12 tháng</p>
+                    <p>HSD: 12 tháng</p>
                 </div>
                 <div class="action">
                     <button onclick="copyCode()">SAO CHÉP MÃ</button>
                 </div>
             </div>
     
-            <div class="card col-xl-3 ">
+            <div class="card col-6 col-md-3"> 
                 <div class="icon">
                     <img src="../img/sale.jpg" alt="Freeship">
                 </div>
                 <div class="details">
-                    <p><strong>Giảm 50% </strong></p>
+                    <p><strong>Giảm 50%</strong></p>
                     <p>(áp dụng cho đơn hàng đầu tiên)</p>
                     <p>Đơn hàng từ 234.000đ</p>
                     <p>Mã: <strong>GIAMGIA-01</strong></p>
-                    <p>HSD:1 tháng</p>
+                    <p>HSD: 1 tháng</p>
                 </div>
                 <div class="action">
                     <button onclick="copyCode()">SAO CHÉP MÃ</button>
                 </div>
             </div>
     
-            <div class="card col-xl-3 ">
+            <div class="card col-6 col-md-3"> 
                 <div class="icon">
                     <img src="../img/sale.jpg" alt="Freeship">
                 </div>
                 <div class="details">
-                    <p><strong>Voucher mua hàng 200.000đ </strong></p>
+                    <p><strong>Voucher mua hàng 200.000đ</strong></p>
                     <p>(áp dụng mọi cửa hàng)</p>
                     <p>Đơn hàng từ 350.000đ</p>
                     <p>Mã: <strong>GIAMGIA</strong></p>
-                    <p>HSD:1 tháng</p>
+                    <p>HSD: 1 tháng</p>
                 </div>
                 <div class="action">
                     <button onclick="copyCode()">SAO CHÉP MÃ</button>
                 </div>
             </div>
     
-            <div class="card col-xl-3">
+            <div class="card col-6 col-md-3"> 
                 <div class="icon">
                     <img src="../img/sale.jpg" alt="Freeship">
                 </div>
                 <div class="details">
-                    <p><strong>Voucher mua hàng 300.000đ </strong></p>
+                    <p><strong>Voucher mua hàng 300.000đ</strong></p>
                     <p>(áp dụng mọi cửa hàng)</p>
                     <p>Đơn hàng từ 500.000đ</p>
                     <p>Mã: <strong>GIAMGIA</strong></p>
-                    <p>HSD:1 tháng</p>
+                    <p>HSD: 1 tháng</p>
                 </div>
                 <div class="action">
                     <button onclick="copyCode()">SAO CHÉP MÃ</button>
@@ -230,11 +183,12 @@
             </div>
         </div>
     </div>
-     <!-- Chính sách của chúng tôi -->
+    
+    <!-- Chính sách của chúng tôi -->
     <div class="d-flex justify-content-center">
         <div class="w-25 htitle-policy text-center">CHÍNH SÁCH</div>
     </div>
-     <div class="advantage-store" id="our-policy">
+    <div class="advantage-store" id="our-policy">
         <div class="sub-advantage-store">
             <ul>
                 <div class="img"><img src="../img/protect.jpg" alt="logo">
@@ -265,7 +219,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-season.1.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -277,7 +231,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-season.2.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -289,7 +243,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-season.3.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -301,7 +255,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-season.4.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -324,7 +278,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-cut.1.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -336,7 +290,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-cut.2.jpg" class="card-img" alt="Image">
                 <div class="card-body">
@@ -348,7 +302,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-cut.3.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -360,7 +314,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-cut.4.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -375,6 +329,7 @@
     </div>
 </div>
 
+
 <!-- quà tặng trái cây -->
 <div class="story-container" id="list-product-gift">
     <div class="section-heading">
@@ -383,7 +338,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-gift.1.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -395,7 +350,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-gift.2.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -407,7 +362,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-gift.3.jpg" class="card-img" alt="Image">
                 <div class="card-body">
@@ -419,12 +374,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-gift.4.webp" class="card-img" alt="Image">
                 <div class="card-body">
-                    <h4 class="card-title d-flex justify-content-center">Hộp quà mừng sinh nhật Đối tác</h4>
-                    <p class="d-flex justify-content-center">1111,000₫</p>
+                    <h4 class="card-title d-flex justify-content-center">Quà mừng sinh nhật Đối tác</h4>
+                    <p class="d-flex justify-content-center">1,111,000₫</p>
                     <div class="d-flex justify-content-center">
                         <button type="button" class="btn btn-danger">Mua Ngay</button>
                     </div>
@@ -434,6 +389,7 @@
     </div>
 </div>
 
+
 <!-- Trái cây tươi hằng ngày -->
 <div class="story-container" id="list-product-everyday">
     <div class="section-heading">
@@ -442,7 +398,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-everyday.1.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -454,7 +410,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-everyday.2.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -466,7 +422,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-everyday.3.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -478,7 +434,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-6 col-md-3"> 
             <div class="card">
                 <img src="../img/product-everyday.4.webp" class="card-img" alt="Image">
                 <div class="card-body">
@@ -492,47 +448,62 @@
         </div>
     </div>
 </div>
+
 <!-- Footer -->
 <footer class=" text-white pt-5 pb-4" style="background-color: #ac2bac;">
     <div class="container text-center text-md-start">
         <div class="row text-center text-md-start">
             <!-- About Us -->
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold">Klevr-fruits</h5>
-                <p>Cung cấp các loại hoa quả nhập khẩu chất lượng cao, đảm bảo sức khỏe cho bạn và gia đình.</p>
+                <ul class="ul-ft-content text-uppercase mb-4 font-weight-bold">Klever-fruits
+                    <li class="ft-content">
+                        Cung cấp các loại hoa quả nhập khẩu chất lượng cao, đảm bảo sức khỏe cho bạn và gia đình.
+                    </li>
+                </ul>
             </div>
-            
+
             <!-- Quick Links -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold">Liên Kết Nhanh</h5>
-                <p><a href="#" class="text-white text-decoration-none">Trang Chủ</a></p>
-                <p><a href="#" class="text-white text-decoration-none">Sản Phẩm</a></p>
-                <p><a href="#" class="text-white text-decoration-none">Khuyến Mãi</a></p>
-                <p><a href="#" class="text-white text-decoration-none">Liên Hệ</a></p>
+                <p>Liên Kết Nhanh</p>
+                <ul class="ul-ft-content text-uppercase mb-4 font-weight-bold">
+                    <li class="ft-content"><a href="#" class="text-white text-decoration-none">Trang Chủ</a></li>
+                    <li class="ft-content"><a href="#" class="text-white text-decoration-none">Sản Phẩm</a></a></li>
+                    <li class="ft-content"><a href="#" class="text-white text-decoration-none">Khuyến Mãi</a></li>
+                    <li class="ft-content"><a href="#" class="text-white text-decoration-none">Khuyến Mãi</a></li>
+                    <li class="ft-content"><a href="#" class="text-white text-decoration-none">Liên Hệ</a></li>
+                </ul>
             </div>
 
             <!-- Contact Info -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold">Thông Tin Liên Hệ</h5>
-                <p><i class="fas fa-home mr-3"></i> 123 Đường Trái Cây, TP.HCM</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@hoaquashop.com</p>
-                <p><i class="fas fa-phone mr-3"></i> +84 123 456 789</p>
+                <p>Thông Tin Liên Hệ</p>
+                <ul class="ul-ft-content text-uppercase mb-4 font-weight-bold">
+                    <li class="ft-content"><i class="fas fa-home mr-3"></i> 123 Đường Trái Cây, TP.HCM</li>
+                    <li class="ft-content"><i class="fas fa-envelope mr-3"></i> info@hoaquashop.com</li>
+                    <li class="ft-content"><i class="fas fa-phone mr-3"></i> +84 123 456 789</li>
+                </ul>
             </div>
 
             <!-- Social Media -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold">Theo Dõi Chúng Tôi</h5>
-                <a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" role="button"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" role="button"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" role="button"><i class="fab fa-google"></i></a>
-                <a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" role="button"><i class="fab fa-instagram"></i></a>
+                <h5>Theo Dõi Chúng Tôi</h5>
+                <ul class="ul-ft-content d-flex align-items-center justify-content-between">
+                    <li><a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" role="button"><i
+                        class="fab fa-facebook-f ft-content"></i></a></li>
+                    <li><a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" role="button"><i
+                        class="fab fa-twitter ft-content"></i></a></li>
+                    <li><a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" role="button"><i
+                        class="fab fa-google ft-content"></i></a></li>
+                    <li><a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" role="button"><i
+                        class="fab fa-instagram ft-content"></i></a></li>
+                </ul>
             </div>
         </div>
 
         <!-- Copyright -->
         <div class="row mt-3">
             <div class="col-md-12 text-center">
-                <p class="text-white">&copy; 2024 Klevr-fruits.com. All Rights Reserved.</p>
+                <p class="text-white">&copy; 2024 Klever-fruits.com. All Rights Reserved.</p>
             </div>
         </div>
     </div>
@@ -541,9 +512,8 @@
 <!-- FontAwesome for icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</html>
-</header>
 
+</html>
 <script src="../js/script.js"></script>
 </body>
 

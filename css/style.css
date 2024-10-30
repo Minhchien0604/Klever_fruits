@@ -1,9 +1,18 @@
 /* Các style chung (giữ nguyên) */
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 header {
@@ -13,10 +22,8 @@ header {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: 0 auto; 
+    padding: 0 15px;
 }
 
 .left-image {
@@ -39,7 +46,7 @@ header {
 }
 
 .search-box input {
-    width: 400px;
+    width: 200px;
     height: 40px;
     margin-right: 5px;
     border: 1px solid #be53b9;
@@ -51,7 +58,7 @@ header {
 }
 
 .search-box button {
-    width: 150px;
+    width: 100px;
     height: 40px;
     background-color: #922a8d;
     border: none;
@@ -84,10 +91,14 @@ header {
 }
 
 /* Navbar Styling */
-.navbar {
-    background-color: #fff;
-    padding: 0 20px;
-    text-align: center;
+.navbar .container {
+    flex-direction: column; /* Đặt các hàng theo cột */
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.navbar #nav {
+    margin-top: 10px; /* Thêm khoảng cách giữa các hàng */
 }
 
 #nav {
@@ -105,6 +116,8 @@ header {
     min-width: 1000px; 
     border-radius: 8px;
 }
+
+
 #nav > li {
     display: inline-block;
 }
@@ -185,6 +198,7 @@ header {
 #nav .sub-nav li:last-child {
     border-bottom: none; 
 }
+
 /* Đổi màu chữ trong các mục con của menu */
 #nav .sub-nav a,
 #nav .sub-nav .sub-nav-prod > li a {
@@ -273,11 +287,18 @@ header {
     padding: 0;
 }
 
+.nav__toggle {
+    position: absolute; 
+    right: 50px; 
+    color: #922a8d;
+}
+
+/* end navbar */
 /* carousel */
 .carousel-container {
     position: relative;
     max-width: 100%;
-    margin-top: 125px;
+    margin-top: 20px;
     overflow: hidden;
 }
 
@@ -324,6 +345,7 @@ header {
 }
 .nav-bar{
     background-color: white;
+    width: 100%;
 }
 
 .carousel .prev:hover, 
@@ -336,10 +358,16 @@ header {
     z-index: 10;
 }
 
+@media (max-width: 768px) {
+    .carousel {
+        height: 50vh; /* Adjust height for smaller screens */
+    }
+}
+
 /* Story Container */
 .story-container {
     margin: 40px auto;
-    padding: 20px 0;
+    padding: 20px;
     background-color: #fff;
     text-align: center;
 }
@@ -395,6 +423,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     transition: transform 0.3s;
+    margin-bottom: 20px;
 }
 
 .story-container .card:hover {
@@ -579,4 +608,15 @@ header {
     .promotion .card {
         flex: 1 1 100%; /* 1 thẻ trên mỗi hàng trên màn hình nhỏ */
     }
+}
+
+/* footer */
+.ul-ft-content {
+    list-style-type: none;
+}
+
+.ul-ft-content ul {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
 }

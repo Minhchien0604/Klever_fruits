@@ -57,3 +57,20 @@ document.addEventListener('DOMContentLoaded', () => {
     carousel.addEventListener('mouseover', stopCarousel);
     carousel.addEventListener('mouseout', startCarousel);
 });
+
+// toggle icon responsive 
+document.addEventListener('DOMContentLoaded', function () {
+    const navToggle = document.getElementById('nav-toggle');
+    const navbarCollapse = document.getElementById('navbarCollapse');
+    const navBurger = document.querySelector('.nav-burger');
+    const navClose = document.querySelector('.nav-close');
+
+    navToggle.addEventListener('click', function () {
+        navbarCollapse.classList.toggle('show'); // Toggle the Bootstrap collapse class
+        navBurger.classList.toggle('d-none'); // Toggle visibility of the burger icon
+        navClose.classList.toggle('d-none'); // Toggle visibility of the close icon
+    });
+});
+
+
+

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevButton = document.querySelector('.carousel .prev');
     const nextButton = document.querySelector('.carousel .next');
     let currentIndex = 0;
-    const intervalTime = 10000; // Thời gian chuyển đổi (ms), ở đây là 10 giây
+    const intervalTime = 10000; // Thời gian chuyển đổi (ms)
     let carouselInterval;
 
     function showImage(index) {
@@ -37,14 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Sự kiện cho nút Prev và Next
     prevButton.addEventListener('click', () => {
         prevImage();
-        // Reset lại interval khi người dùng tự chuyển ảnh
         stopCarousel();
         startCarousel();
     });
 
     nextButton.addEventListener('click', () => {
         nextImage();
-        // Reset lại interval khi người dùng tự chuyển ảnh
         stopCarousel();
         startCarousel();
     });
@@ -52,11 +50,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // Khởi động carousel tự động
     startCarousel();
 
-    // Tùy chọn: Tạm dừng carousel khi di chuột qua và tiếp tục khi ra
+    // Tạm dừng carousel khi di chuột qua và tiếp tục khi ra
     const carousel = document.querySelector('.carousel');
     carousel.addEventListener('mouseover', stopCarousel);
     carousel.addEventListener('mouseout', startCarousel);
+
+    // Kiểm tra kích thước màn hình
+    function checkWindowSize() {
+        if (window.innerWidth < 992) {
+            stopCarousel(); // Dừng carousel
+            carousel.style.display = 'none'; // Ẩn carousel
+        } else {
+            carousel.style.display = ''; // Hiển thị lại carousel
+            startCarousel(); // Khởi động lại carousel
+        }
+    }
+
+    // Gọi hàm kiểm tra kích thước ngay khi tải trang
+    checkWindowSize();
+
+    // Thêm sự kiện thay đổi kích thước cửa sổ
+    window.addEventListener('resize', checkWindowSize);
 });
+
 
 // toggle icon responsive 
 document.addEventListener('DOMContentLoaded', function () {

@@ -319,7 +319,7 @@ header {
     left: 0;
 }
 
-.carousel img.active{
+.carousel img.active {
     display: block;
 }
 
@@ -333,7 +333,6 @@ header {
     padding: 10px 20px;
     cursor: pointer;
     z-index: 1;
-
 }
 
 .carousel .prev {
@@ -343,14 +342,15 @@ header {
 .carousel .next {
     right: 10px;
 }
-.nav-bar{
+
+.nav-bar {
     background-color: white;
     width: 100%;
 }
 
 .carousel .prev:hover, 
-.carousel .next:hover{
-    background-color: rgba(0,0,0,0.7);
+.carousel .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .carousel-container, .carousel {
@@ -358,11 +358,19 @@ header {
     z-index: 10;
 }
 
-@media (max-width: 768px) {
-    .carousel {
-        height: 50vh; /* Adjust height for smaller screens */
+/* Ẩn carousel khi kích thước màn hình nhỏ hơn 992px */
+@media (max-width: 992px) {
+    .carousel-container {
+        display: none; /* Ẩn carousel */
     }
 }
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 50vh; /* Điều chỉnh chiều cao cho màn hình nhỏ hơn */
+    }
+}
+
 
 /* Story Container */
 .story-container {

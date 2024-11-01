@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./asset/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../font/fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <title></title>
 </head>
@@ -28,11 +30,11 @@
                         <div class="icons-container col-lg-7">
                             <div class="icon-box">
                                 <i class="fa-solid fa-user"></i>
-                                <a href="#">Tìm kiếm<i class="fa-solid fa-user d-none"></i></a>
+                                <a href="log-in.html">Đăng Nhập<i class="fa-solid fa-user d-none"></i></a>
                             </div>
                             <div class="icon-box">
                                 <i class="fa-solid fa-user-plus"></i>
-                                <a href="#">Đăng ký</a>
+                                <a href="sign-up.html">Đăng ký</a>
                             </div>
                             <div class="icon-box">
                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -102,9 +104,9 @@
                         <a class="title" href="">TRÁI CÂY TƯƠI HÀNG NGÀY</a>
                         <i class="nav-arrow-down fa-solid fa-angle-down"></i>
                         <ul class="sub-nav">
-                            <li><a href="list-product-everyday">Bộ đôi dinh dưỡng</a></li>
-                            <li><a href="list-product-everyday">BST Vitamin cho bạn</a></li>
-                            <li><a href="list-product-everyday">BST Vitamin cho gia đình</a></li>
+                            <li><a href="#list-product-everyday">Bộ đôi dinh dưỡng</a></li>
+                            <li><a href="#list-product-everyday">BST Vitamin cho bạn</a></li>
+                            <li><a href="#list-product-everyday">BST Vitamin cho gia đình</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -178,87 +180,15 @@
                     <img src="../img/anh3.webp" class="card-img" alt="Image">
                     <div class="card-body">
                         <h4 class="card-title">CHÀO MỪNG PHÁI ĐOÀN BỘ NÔNG NGHIỆP BANG WASHINGTON HOA KỲ</h4>
-                        <p>Klever Fruit hân hạnh được tiếp đón phái đoàn Bộ nông nghiệp Bang Washington. Dẫn đầu phái đoàn là Bà Rianne Ham - Giám đốc Tiếp thị Quốc tế của Bộ Nông nghiệp Bang Washington cùng sự có mặt của các doanh nghiệp xuất nhập khẩu ... </p>
+                        <p>Klever Fruit hân hạnh được tiếp đón phái đoàn Bộ nông nghiệp Bang Washington. Dẫn đầu phái đoàn là Bà Rianne Ham - Giám đốc Tiếp thị Quốc tế của Bộ Nông nghiệp Bang Washington cùng sự có mặt của các doanh nghiệp ... </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <!-- khanh beo -->
-    <div class="promotion" id="flash-sale">
-        <div class="section-head">
-            <h3 class="title-promotion">Chương trình khuyến mãi</h3>
-        </div>
-        <div class="row">
-            <div class="card col-6 col-md-3"> 
-                <div class="icon">
-                    <img src="../img/xe.jpg" alt="Freeship">
-                </div>
-                <div class="details">
-                    <p><strong>Miễn phí vận chuyển</strong></p>
-                    <p>(Áp dụng cho đơn hàng đầu tiên)</p>
-                    <p>Đơn hàng từ 500.000đ</p>
-                    <p>Mã: <strong>FREESHIP-01</strong></p>
-                    <p>HSD: 12 tháng</p>
-                </div>
-                <div class="action">
-                    <button onclick="copyCode()">SAO CHÉP MÃ</button>
-                </div>
-            </div>
-    
-            <div class="card col-6 col-md-3"> 
-                <div class="icon">
-                    <img src="../img/sale.jpg" alt="Freeship">
-                </div>
-                <div class="details">
-                    <p><strong>Giảm 50%</strong></p>
-                    <p>(áp dụng cho đơn hàng đầu tiên)</p>
-                    <p>Đơn hàng từ 234.000đ</p>
-                    <p>Mã: <strong>GIAMGIA-01</strong></p>
-                    <p>HSD: 1 tháng</p>
-                </div>
-                <div class="action">
-                    <button onclick="copyCode()">SAO CHÉP MÃ</button>
-                </div>
-            </div>
-    
-            <div class="card col-6 col-md-3"> 
-                <div class="icon">
-                    <img src="../img/sale.jpg" alt="Freeship">
-                </div>
-                <div class="details">
-                    <p><strong>Voucher mua hàng 200.000đ</strong></p>
-                    <p>(áp dụng mọi cửa hàng)</p>
-                    <p>Đơn hàng từ 350.000đ</p>
-                    <p>Mã: <strong>GIAMGIA</strong></p>
-                    <p>HSD: 1 tháng</p>
-                </div>
-                <div class="action">
-                    <button onclick="copyCode()">SAO CHÉP MÃ</button>
-                </div>
-            </div>
-    
-            <div class="card col-6 col-md-3"> 
-                <div class="icon">
-                    <img src="../img/sale.jpg" alt="Freeship">
-                </div>
-                <div class="details">
-                    <p><strong>Voucher mua hàng 300.000đ</strong></p>
-                    <p>(áp dụng mọi cửa hàng)</p>
-                    <p>Đơn hàng từ 500.000đ</p>
-                    <p>Mã: <strong>GIAMGIA</strong></p>
-                    <p>HSD: 1 tháng</p>
-                </div>
-                <div class="action">
-                    <button onclick="copyCode()">SAO CHÉP MÃ</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
     <!-- Chính sách của chúng tôi -->
-    <div class="d-flex justify-content-center mb-4">
+    <div class="d-flex justify-content-center mb-4 mt-4">
         <div class="w-25 htitle-policy text-center">CHÍNH SÁCH</div>
     </div>
     <div class="advantage-store" id="our-policy">
@@ -338,6 +268,78 @@
                         <button type="button" class="btn btn-danger">Mua Ngay</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- khanh beo -->
+<div class="promotion" id="flash-sale">
+    <div class="section-head">
+        <h3 class="title-promotion">Chương trình khuyến mãi</h3>
+    </div>
+    <div class="row">
+        <div class="card col-6 col-md-3"> 
+            <div class="icon">
+                <img src="../img/xe.jpg" alt="Freeship">
+            </div>
+            <div class="details">
+                <p><strong>Miễn phí vận chuyển</strong></p>
+                <p>(Áp dụng cho đơn hàng đầu tiên)</p>
+                <p>Đơn hàng từ 500.000đ</p>
+                <p>Mã: <strong>FREESHIP-01</strong></p>
+                <p>HSD: 12 tháng</p>
+            </div>
+            <div class="action">
+                <button onclick="copyCode()">SAO CHÉP MÃ</button>
+            </div>
+        </div>
+
+        <div class="card col-6 col-md-3"> 
+            <div class="icon">
+                <img src="../img/sale.jpg" alt="Freeship">
+            </div>
+            <div class="details">
+                <p><strong>Giảm 50%</strong></p>
+                <p>(áp dụng cho đơn hàng đầu tiên)</p>
+                <p>Đơn hàng từ 234.000đ</p>
+                <p>Mã: <strong>GIAMGIA-01</strong></p>
+                <p>HSD: 1 tháng</p>
+            </div>
+            <div class="action">
+                <button onclick="copyCode()">SAO CHÉP MÃ</button>
+            </div>
+        </div>
+
+        <div class="card col-6 col-md-3"> 
+            <div class="icon">
+                <img src="../img/sale.jpg" alt="Freeship">
+            </div>
+            <div class="details">
+                <p><strong>Voucher mua hàng 200.000đ</strong></p>
+                <p>(áp dụng mọi cửa hàng)</p>
+                <p>Đơn hàng từ 350.000đ</p>
+                <p>Mã: <strong>GIAMGIA</strong></p>
+                <p>HSD: 1 tháng</p>
+            </div>
+            <div class="action">
+                <button onclick="copyCode()">SAO CHÉP MÃ</button>
+            </div>
+        </div>
+
+        <div class="card col-6 col-md-3"> 
+            <div class="icon">
+                <img src="../img/sale.jpg" alt="Freeship">
+            </div>
+            <div class="details">
+                <p><strong>Voucher mua hàng 300.000đ</strong></p>
+                <p>(áp dụng mọi cửa hàng)</p>
+                <p>Đơn hàng từ 500.000đ</p>
+                <p>Mã: <strong>GIAMGIA</strong></p>
+                <p>HSD: 1 tháng</p>
+            </div>
+            <div class="action">
+                <button onclick="copyCode()">SAO CHÉP MÃ</button>
             </div>
         </div>
     </div>
@@ -523,71 +525,87 @@
 </div>
 
 <!-- Footer -->
-<footer class=" text-white pt-5 pb-4" style="background-color: #ac2bac;">
-    <div class="container text-center text-md-start">
-        <div class="row text-center text-md-start">
-            <!-- About Us -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <ul class="ul-ft-content text-uppercase mb-4 font-weight-bold">Klever-fruits
-                    <li class="ft-content">
-                        Cung cấp các loại hoa quả nhập khẩu chất lượng cao, đảm bảo sức khỏe cho bạn và gia đình.
-                    </li>
-                </ul>
-            </div>
+<div class="logo-section">
+    <img src="../img/logo.png" alt="Klever Fruit">
+</div>
+<div class="footer-content">
 
-            <!-- Quick Links -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <p>Liên Kết Nhanh</p>
-                <ul class="ul-ft-content text-uppercase mb-4 font-weight-bold">
-                    <li class="ft-content"><a href="#" class="text-white text-decoration-none">Trang Chủ</a></li>
-                    <li class="ft-content"><a href="#" class="text-white text-decoration-none">Sản Phẩm</a></a></li>
-                    <li class="ft-content"><a href="#" class="text-white text-decoration-none">Khuyến Mãi</a></li>
-                    <li class="ft-content"><a href="#" class="text-white text-decoration-none">Khuyến Mãi</a></li>
-                    <li class="ft-content"><a href="#" class="text-white text-decoration-none">Liên Hệ</a></li>
-                </ul>
-            </div>
+<div class="footer-section company-info">
+    <h3>Thông tin công ty</h3>
+    <p>CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ ĐẦU TƯ K.L.E.V.E</p>
+    <p>Số đăng ký kinh doanh: 0101628217</p>
+    <p>Địa chỉ: Lô A2, CN5, Cụm Công nghiệp Từ Liêm, Phường Phương Canh, Quận Nam Từ Liêm, Thành phố Hà Nội, Việt Nam</p>
+    <p>Hotline: 1900633883</p>
+    <p>Email CSKH: cskh@kleverjuice.com.vn</p>
+    <img src="../img/logo-footer.webp" alt="Đã thông báo Bộ Công Thương" class="bo-cong-thuong">
+</div>
 
-            <!-- Contact Info -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <p>Thông Tin Liên Hệ</p>
-                <ul class="ul-ft-content text-uppercase mb-4 font-weight-bold">
-                    <li class="ft-content"><i class="fas fa-home mr-3"></i> 123 Đường Trái Cây, TP.HCM</li>
-                    <li class="ft-content"><i class="fas fa-envelope mr-3"></i> info@hoaquashop.com</li>
-                    <li class="ft-content"><i class="fas fa-phone mr-3"></i> +84 123 456 789</li>
-                </ul>
-            </div>
+<div class="footer-section policy-links">
+    <h3>Chính sách và dịch vụ</h3>
+    <a href="#">Đổi trả 48h</a>
+    <a href="#">Chính sách khách hàng thân thiết</a>
+    <a href="#">Chính sách bảo mật thông tin cá nhân</a>
+    <a href="#">Chính sách cho khách hàng doanh nghiệp</a>
+    <a href="#">Chính sách mua hàng trên Kênh Klever Fruit Online</a>
+    <a href="#">Hướng dẫn sử dụng E-voucher</a>
+</div>
 
-            <!-- Social Media -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
-                <h5>Theo Dõi Chúng Tôi</h5>
-                <ul class="ul-ft-content d-flex align-items-center justify-content-between">
-                    <li><a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" role="button"><i
-                        class="fab fa-facebook-f ft-content"></i></a></li>
-                    <li><a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" role="button"><i
-                        class="fab fa-twitter ft-content"></i></a></li>
-                    <li><a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" role="button"><i
-                        class="fab fa-google ft-content"></i></a></li>
-                    <li><a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" role="button"><i
-                        class="fab fa-instagram ft-content"></i></a></li>
-                </ul>
+
+<div class="footer-section">
+    <h3>Kênh liên hệ</h3>
+    <div class="social-links">
+        <a href=""><img src="../img/fb_ico.webp" alt="Facebook"></a>
+        <a href="#"><img src="../img/tw_ico.webp" alt="Zalo"></a>
+        <a href=""><img src="../img/insta_ico.webp" alt="Instagram"></a>
+        <a href=""><img src="../img/gp_ico.webp" alt="TikTok"></a>
+    </div>
+</div>
+
+<div class="footer-section store-links">
+    <h3>Hệ thống cửa hàng</h3>
+    <a href="#">Hà Nội</a>
+    <a href="#">Hồ Chí Minh</a>
+</div>
+</div>
+<div class="support-banner py-2">
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-auto mb-2 mb-md-0">
+            <div class="support-label d-flex align-items-center">
+                <i class="bi bi-headset me-2"></i>
+                <span>HỖ TRỢ KHÁCH HÀNG</span>
             </div>
         </div>
-
-        <!-- Copyright -->
-        <div class="row mt-3">
-            <div class="col-md-12 text-center">
-                <p class="text-white">&copy; 2024 Klever-fruits.com. All Rights Reserved.</p>
+        <div class="col-md">
+            <div class="d-flex flex-column flex-md-row gap-2 gap-md-4">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-cart me-2"></i>
+                    <span>MUA HÀNG: 0972747899</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-telephone me-2"></i>
+                    <span>HOTLINE: 1900653883</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-envelope me-2"></i>
+                    <span>EMAIL: CSKH@KLEVERJUICE.COM.VN</span>
+                </div>
             </div>
+        </div>
+        <div class="col-md-auto mt-2 mt-md-0">
+            <span>Copyright © 2024 Klever Fruit</span>
         </div>
     </div>
-</footer>
+</div>
+</div>
 
 <!-- FontAwesome for icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>
 <script src="../js/script.js"></script>
+
 </body>
 
 </html>
